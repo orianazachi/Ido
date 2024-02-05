@@ -1,4 +1,3 @@
-import 'dotenv/config'
 
 let Discord = require("discord.js");
 const keep_alive = require('./keep_alive.js')
