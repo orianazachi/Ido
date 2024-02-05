@@ -1,7 +1,7 @@
 const express = require("express");
 const app = express();
 
-const keep_alive = require('./keep_alive.js/')
+const keep_alive = require('./keep_alive.js')
 
 let Discord = require("discord.js");
 let client = new Discord.Client();
