@@ -1,13 +1,7 @@
 const express = require("express");
 const app = express();
 
-app.get("/", (req, res) => {
-  res.send("דור השמן");
-});
-
-app.listen(3000, () => {
-  console.log("Project is Ready!");
-});
+const keep_alive = require('./keep_alive.js/')
 
 let Discord = require("discord.js");
 let client = new Discord.Client();
