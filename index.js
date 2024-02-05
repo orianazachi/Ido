@@ -3,6 +3,15 @@ const app = express();
 
 const keep_alive = require('./keep_alive.js')
 
+app.get("/", (req, res) => {
+  res.send("דור השמן");
+});
+
+app.listen(3000, () => {
+  console.log("Project is Ready!");
+});
+
+
 let Discord = require("discord.js");
 let client = new Discord.Client();
 let filter = (msg) => msg.author.id === msg.author.id;
